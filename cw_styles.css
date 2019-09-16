@@ -50,39 +50,66 @@ body >  header h1{
 h1 :last-of-type{
    color: rgba(255,255,255,.4)
 }
-
-
 /* Navigation Styles */
 #mainlinks{
    padding-top: 5px;
    padding-bottom: 5px;
 }
 nav a:visited {
-   color: white;
+   color:rgb(101,101,101);
 }
 nav a:active{
    opacity: .8;
-   background-color: rgba(51,51,51.5);
+   background-color: rgb(97,97,211);
+   text-decoration: underline;
 }
-
+nav a:hover{
+   opacity: .8;
+   background-color: rgb(97,97,211);
+   text-decoration: underline;
+}
 
 /* Outline Styles */
 #outline{
    color:rgb(51,51,51);
    font-size: .8em;
 }
-
+nav>ol{
+   line-height: 2em;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style: upper-roman;
+}
+li>ol{
+   list-style: upper-alpha;
+}
 
 
 /* Section Styles */
-
-
+section{
+   background-color: rgb(220,220,220);
+}
+section header h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 
 /* Article Styles */
-
-
+h2{
+   font-size: 1.4em;
+}
+article p:first-of-type::first-letter{
+   font-size: 2em;
+}
 
 
 /* Aside Styles */
-
+aside h1{
+   font-size: 1.4em;
+}
+aside p{
+   font-size: .9em;
+}
